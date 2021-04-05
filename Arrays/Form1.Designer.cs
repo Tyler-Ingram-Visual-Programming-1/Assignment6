@@ -52,13 +52,13 @@
             // 
             this.label1.Location = new System.Drawing.Point(12, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 23);
+            this.label1.Size = new System.Drawing.Size(48, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "SeqNum";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(86, 33);
+            this.label2.Location = new System.Drawing.Point(57, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 23);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(181, 33);
+            this.label3.Location = new System.Drawing.Point(140, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 23);
             this.label3.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(245, 33);
+            this.label4.Location = new System.Drawing.Point(194, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 23);
             this.label4.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(309, 33);
+            this.label5.Location = new System.Drawing.Point(244, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 23);
             this.label5.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(373, 33);
+            this.label6.Location = new System.Drawing.Point(294, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 23);
             this.label6.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(428, 33);
+            this.label7.Location = new System.Drawing.Point(338, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(58, 23);
             this.label7.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(514, 22);
+            this.label8.Location = new System.Drawing.Point(382, 22);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 34);
             this.label8.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(572, 22);
+            this.label9.Location = new System.Drawing.Point(424, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 34);
             this.label9.TabIndex = 8;
@@ -124,7 +124,7 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(636, 22);
+            this.label10.Location = new System.Drawing.Point(476, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 36);
             this.label10.TabIndex = 9;
@@ -133,7 +133,7 @@
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(700, 22);
+            this.label11.Location = new System.Drawing.Point(527, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 37);
             this.label11.TabIndex = 10;
@@ -142,30 +142,33 @@
             // 
             // getGradesButton
             // 
-            this.getGradesButton.Location = new System.Drawing.Point(140, 345);
+            this.getGradesButton.Location = new System.Drawing.Point(57, 329);
             this.getGradesButton.Name = "getGradesButton";
             this.getGradesButton.Size = new System.Drawing.Size(72, 35);
             this.getGradesButton.TabIndex = 11;
             this.getGradesButton.Text = "Get Grades";
             this.getGradesButton.UseVisualStyleBackColor = true;
+            this.getGradesButton.Click += new System.EventHandler(this.getGradesButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(322, 345);
+            this.clearButton.Location = new System.Drawing.Point(254, 329);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(72, 35);
             this.clearButton.TabIndex = 12;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(492, 345);
+            this.exitButton.Location = new System.Drawing.Point(487, 329);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(72, 35);
             this.exitButton.TabIndex = 13;
             this.exitButton.Text = "EXIT";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // openFileDialog1
             // 
@@ -176,14 +179,14 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 59);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(746, 264);
+            this.listBox1.Size = new System.Drawing.Size(611, 264);
             this.listBox1.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 392);
+            this.ClientSize = new System.Drawing.Size(634, 369);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
